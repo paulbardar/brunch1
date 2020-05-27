@@ -1,0 +1,62 @@
+.discover-menu {
+  background: $secondaryBgColor;
+  padding: 45px 0 120px;
+  &__title {
+    @include titleh2-style;
+    text-align: center;
+  }
+  &__subtitle {
+    @include subtitle-style;
+    font-size: 47px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+.menu-card {
+  &__desc {
+    background: $whiteColor;
+    padding: 10px 26px 37px;
+    color: $menuCardColor;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__meta {
+    font-size: 14px;
+    line-height: 2.36;
+    font-weight: bold;
+    margin-bottom: 14px;
+    letter-spacing: 1.05px;
+  }
+  &__title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  &__text {
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  &__link {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: inherit;
+    padding-bottom: 10px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 6px;
+      background-color: $linkMoreColor;
+    }
+    &:hover {
+      color: $linkMoreColor;
+    }
+  }
+}

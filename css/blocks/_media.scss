@@ -1,0 +1,104 @@
+@media screen and (max-width: $screenMenu) {
+  .menu__link {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: $screen-middle-medium) {
+  .india {
+    .menu-item {
+      &__desc {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-medium) {
+
+  .header {
+    .menu {
+      display: none;
+    }
+  }
+  .hero {
+    padding-bottom: 50px;
+    &__content {
+      padding-top: 50px;
+    }
+    &__subtitle {
+      font-size: 40px;
+    }
+  }
+
+  .flavours {
+    &__textblock {
+      padding: 20px 0 20px;
+    }
+  }
+
+  .newtastes {
+    &__item {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  .india {
+    .menu-item {
+      &:nth-child(3),
+      &:nth-child(4) {
+        flex-direction: row;
+      }
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  .traditional {
+    .second-menu {
+      flex-wrap: wrap;
+      &__item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .booking {
+    .contact-form {
+      padding: 0 15px;
+      &__field {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+    .form-row {
+      flex-direction: column;
+    }
+    .form-row__submit {
+      flex-direction: row;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: $screen-small) {
+  .india {
+    .menu-item {
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(odd),
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+
+      &__desc, img {
+        width: 100%;
+      }
+    }
+  }
+}

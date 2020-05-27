@@ -1,0 +1,87 @@
+.discover {
+  padding-top: 238px;
+  background: url('../img/discover.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  &__block {
+    background-color: rgba(255, 255, 255, 0.82);
+    padding: 46px 0 13px;
+  }
+  &__header {
+    text-align: center;
+    margin-bottom: 33px;
+  }
+  &__title {
+    @include titleh2-style;
+    // font-family: $fontDecor;
+    // font-weight: 400;
+    // line-height: 0.7;
+  }
+  &__subtitle {
+    @include subtitle-style;
+    font-size: 47px;
+    font-weight: 600;
+  }
+}
+.newmenu {
+  &__wrapper {
+    max-width: $widthWrapper;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+}
+.newmenu-item {
+  max-width: 411px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: 54px;
+  &__icon {
+    width: 155px;
+    height: 83px;
+    border-radius: 50%;
+    background: $whiteColor;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    &--tikka {
+      background-image: url('../img/discover1.png');
+    }
+    &--soup {
+      background-image: url('../img/discover2.png');
+    }
+    &--plain {
+      background-image: url('../img/discover3.png');
+    }
+    &--curry {
+      background-image: url('../img/discover4.png');
+    }
+    &--chickcurry {
+      background-image: url('../img/discover5.png');
+    }
+    &--spicy {
+      background-image: url('../img/discover6.png');
+    }
+  }
+  &__desc {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  &__title {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-size: $fsMenuTitle;
+    font-weight: bold;
+  }
+  &__text {
+    display: inline;
+    line-height: 1.2;
+  }
+  &__price {
+    font-weight: bold;
+  }
+
+}

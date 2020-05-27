@@ -1,0 +1,56 @@
+.india {
+  padding: 90px 0 82px;
+  background: url('../img/indiabg.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  &__block {
+    background: rgba(255, 255, 255, 0.82);
+  }
+  &__header {
+    padding: 55px 0 51px;
+    text-align: center;
+  }
+  &__title {
+    font-family: $fontDecor;
+    line-height: 0.7;
+  }
+  &__subtitle {
+    font-size: 47.6px;
+    // color: $subTitleColor;
+    // text-transform: uppercase;
+    @include subtitle-style;
+    font-weight: 600;
+  }
+}
+
+.menu-block {
+
+}
+.menu-item {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  &:nth-child(3),
+  &:nth-child(4) {
+    flex-direction: row-reverse;
+  }
+  &__desc, img {
+    width: 50%;
+  }
+  &__desc {
+    text-align: center;
+    padding: 64px 51px 65px;
+    color: $menuItemColor;
+  }
+  &__title {
+    font-size: 18.5px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  &__price {
+    font-size: $fsPrice;
+  }
+}

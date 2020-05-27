@@ -1,0 +1,49 @@
+.social {
+  padding: 18px 0 45px;
+  background: $primaryBgColor;
+  color: $whiteColor;
+  &__block {
+    text-align: center;
+  }
+  &__decor {
+    font-size: 83px;
+    font-weight: bold;
+    margin-bottom: 27px;
+    line-height: 0.5;
+    display: block;
+  }
+  &__review {
+    font-size: $fsSecondary;
+    line-height: $lhSecondary;
+    max-width: 706px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+  }
+  &__author {
+    font-size: $fsSecondary;
+    font-weight: bold;
+    line-height: $lhSecondary;
+    margin-bottom: 35px;
+  }
+  &__network {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    margin-left: -29px;
+  }
+  &__link {
+    margin-left: 26px;
+    &:first-child {
+      margin-left: 0;
+    }
+    img {
+      transition: all 0.3s ease-in;
+    }
+    &:hover {
+      img {
+        transform: scale(1.3);
+      }
+    }
+  }
+}

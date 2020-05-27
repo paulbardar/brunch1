@@ -1,0 +1,10 @@
+@mixin subtitle-style {
+  text-transform: uppercase;
+  color: $subTitleColor;
+}
+
+@mixin titleh2-style {
+  font-family: $fontDecor;
+  line-height: 0.7;
+  font-weight: 400;
+}

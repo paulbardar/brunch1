@@ -1,0 +1,110 @@
+.booking {
+  padding: 46px 0 40px;
+  color: $whiteColor;
+  &__title {
+    @include titleh2-style;
+    color: $whiteColor;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  &__block {
+    // padding-right: 78px;
+    .contact-form {
+      input,
+      select {
+        width: 100%;
+        border: 2px solid $whiteColor;
+        border-radius: 8px;
+        padding: 5px;
+        color: $whiteColor;
+        &:focus {
+          background: $primaryBgColor;
+        }
+        &::placeholder {
+          color: inherit;
+        }
+      }
+      label {
+        margin-bottom: 10px;
+      }
+      button[type="submit"] {
+        border: 2px solid $whiteColor;
+        background: $primaryBgColor;
+        border-radius: 8px;
+        padding: 5px;
+        color: $whiteColor;
+        text-transform: uppercase;
+        width: 245px;
+        margin-top: 20px;
+        &:hover {
+          background: $whiteColor;
+          border: 2px solid $primaryColor;
+          color: $primaryColor;
+        }
+      }
+      &__field {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        width: 245px;
+      }
+      &__people {
+        position: relative;
+        &:after {
+          content: url('../img/triangle.png');
+          position: absolute;
+          top: 35px;
+          right: 11px;
+        }
+        select {
+          -webkit-appearance: none;
+          position: relative;
+        }
+      }
+      &__date {
+        position: relative;
+        &:after {
+          content: url('../img/date-icon.png');
+          position: absolute;
+          top: 32px;
+          right: 11px;
+        }
+      }
+      &__date + input[type="date"]:focus {
+        &:after {
+          content: "";
+          display: none;
+        }
+      }
+      &__time {
+        position: relative;
+        &:after {
+          content: url('../img/watch-icon.png');
+          position: absolute;
+          top: 32px;
+          right: 11px;
+        }
+      }
+      &__name {
+        position: relative;
+        &:after {
+          content: url('../img/triangle.png');
+          position: absolute;
+          top: 35px;
+          right: 11px;
+        }
+      }
+      .form-row {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+        &__submit {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

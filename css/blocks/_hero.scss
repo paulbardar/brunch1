@@ -1,0 +1,139 @@
+.hero {
+  padding: 50px 0 220px;
+  background: $primaryColor url('../img/hero_bg.jpg') no-repeat 50% 50%;
+  background-size: cover;
+	position: relative;
+}
+.header {
+  display: flex;
+  position: relative;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 5px 0 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: $fsHeader;
+  color: $menuColor;
+
+  &__logo {
+    // text-transform: uppercase;
+    // font-weight: bold;
+    // font-size: $fsHeader;
+    color: $menuColor;
+  }
+  .nav {
+    flex-grow: 1;
+  }
+  .menu {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &__item {
+      margin-right: 23px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__link {
+      text-decoration: none;
+      // text-transform: uppercase;
+      // font-weight: bold;
+      // font-size: $fsHeader;
+      color: $menuColor;
+      position: relative;
+      &:hover {
+        color: $menuLinkHover;
+      }
+    }
+  }
+}
+
+.hero {
+  &__content {
+    padding: 197px 0 0;
+  }
+  &__wrapper {
+    max-width: 758px;
+    padding: 108px 0 108px;
+    background-color: rgba(255, 255, 255, 0.82);
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__title {
+    font-family: $fontDecor;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+  }
+  &__subtitle {
+    // text-transform: uppercase;
+    // color: $subTitleColor;
+    font-size: 77px;
+    font-weight: 600;
+    @include subtitle-style;
+    margin-bottom: 27px;
+    line-height: 0.7;
+  }
+  &__button {
+    font-size: $heroBtnFs;
+    color: $heroBtnColor;
+    background-color: $whiteColor;
+    &:hover{
+      background-color: $primaryBgColor;
+      color: $whiteColor;
+    }
+  }
+}
+
+// slicknav
+.slicknav_menu {
+  display: none;
+  .slicknav_icon-bar {
+    background-color: $whiteColor;
+  }
+  .slicknav_nav {
+    position: absolute;
+    z-index: 5;
+    min-width: 100%;
+    right: 0;
+    text-outline: 0;
+    top: 80%;
+    background: $primaryBgColor;
+    .menu__item {
+      margin-right: 0;
+    }
+    @media screen and (max-width: $screen-medium) {
+      padding: 10px 0;
+    }
+  }
+  .slicknav_menutxt {
+      display: none;
+    }
+    .slicknav_btn {
+      display: inline-block;
+      float: right;
+      background: transparent;
+      font-size: 24px;
+      // text-align: center;
+    }
+    .menu {
+      &__item {
+        background: transparent;
+        text-align: center;
+      }
+      &__link {
+        display: inline-block;
+      }
+    }
+
+    @media screen and (max-width: $screen-medium) {
+      display: block;
+      width: 100%;
+      background: transparent;
+
+    }
+}

@@ -1,0 +1,19 @@
+.flavours {
+  padding: 70px 0 60px;
+  &__textblock {
+    padding: 85px 0 100px;
+    max-width: 565px;
+    color: $whiteColor;
+  }
+  &__title {
+    margin-bottom: 35px;
+  }
+  &__text {
+    font-size: $fsSecondary;
+    line-height: $lhSecondary;
+  }
+  &__image {
+    max-width: 540px;
+    padding-left: 10px;
+  }
+}
